@@ -3,7 +3,7 @@ n11.com'da yer alan ürünlere yapılan yorumları çekmek için yazılmıştır
 
 -----------------------------------------
 
-## Dokümantasyon
+### Dokümantasyon
 * [Kurulum](#kurulum)
 * [Kullanım](#kullanım)
 * [Parametreler](#parametreler)
@@ -12,14 +12,14 @@ n11.com'da yer alan ürünlere yapılan yorumları çekmek için yazılmıştır
 
 -----------------------------------------
 
-## Katkıda Bulunanlar
+### Katkıda Bulunanlar
 İstediğiniz veya eksik olan fonksiyonlar için `issue` açabilirsiniz. Ya da katkıda bulunmak için fonksiyonları kendiniz yazın ve `pull request` gönderin.
 
 ![Katkıda Bulunanlar](https://contrib.rocks/image?repo=hakansrndk60/n11-comment-crawler)
 
 -----------------------------------------
 
-## Kurulum
+### Kurulum
 `n11_crawler.py` ve `requirements.txt` dosyalarını projenizin olduğu yere atın.
 
 Daha sonra terminalde aşağıdaki kodu çalıştırın.
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 -----------------------------------------
 
-## Kullanım
+### Kullanım
 ```python
 from n11_crawler import N11Crawler
 
@@ -39,7 +39,7 @@ crawler.run()
 
 -----------------------------------------
 
-## Parametreler
+### Parametreler
 
 | Parametre    | Default Değeri | Açıklama                                                           |
 | ------------ | -------------- | ------------------------------------------------------------------ |
@@ -55,7 +55,7 @@ crawler = N11Crawler("561281932", save_as_json=True, max_comments=100, progress_
 
 -----------------------------------------
 
-## Fonksiyonlar
+### Fonksiyonlar
 
 | Fonksiyon             | Açıklama                                                                                      |
 | --------------------- | --------------------------------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ crawler.save_as_json(filename="yorumlar") # yorumlar.json
 
 -----------------------------------------
 
-## Product Id Nasıl Bulunur?
+### Product Id Nasıl Bulunur?
 
 Aşağıdaki gibi **233 Yorum** yazan yere sağ tık yapıp **İncele** diyerekten bulabilirsiniz. Karşınıza `data-product-id="205217777"` çıkacaktır. Bu ürünün id si `205217777` olmuş olur.
 
@@ -88,6 +88,6 @@ Ya da **Ctrl+F** ile `data-product-id` aratabilirsiniz.
 
 -----------------------------------------
 
-## Uyarı
+### Uyarı
 
 Bu proje yorumlardan veri seti oluşturmak amacıyla yazılmıştır. Eğer **n11.com** için sorun teşkil ediyorsa yetkililer bana mail üzerinden ulaşabilir. Projeyi kaldırabilirim.
